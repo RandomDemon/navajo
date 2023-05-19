@@ -1,1 +1,35 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>English-Navajo Translator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <pre class="ascii-art">
+ _____  _    _ _______  ______ _____  ______
+|  __ \| |  | |__   __| |  ____|  __ \|  ____|
+| |__) | |__| |  | |    | |__  | |__) | |__
+|  _  /|  __  |  | |    |  __| |  _  /|  __|
+| | \ \| |  | |  | |    | |____| | \ \| |____
+|_|  \_\_|  |_|  |_|    |______|_|  \_\______|
+  </pre>
+  <div class="container">
+    <h1>English-Navajo Translator</h1>
+    <div class="input-container">
+      <label for="text">Enter text:</label>
+      <textarea id="text" rows="4" cols="50"></textarea>
+    </div>
+    <div class="output-container">
+      <button onclick="translateToNavajo()">Translate to Navajo</button>
+      <label for="navajo-text">Navajo translation:</label>
+      <textarea id="navajo-text" rows="4" cols="50" readonly></textarea>
+    </div>
+    <div class="output-container">
+      <button onclick="translateToEnglish()">Translate to English</button>
+      <label for="english-text">English translation:</label>
+      <textarea id="english-text" rows="4" cols="50" readonly></textarea>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
